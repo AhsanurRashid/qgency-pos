@@ -1,0 +1,14 @@
+.full_screen_button_container {
+    @apply flex items-center gap-[8px] px-[16px] py-[10px] rounded-[8px] transition-all duration-75 ease-in-out;
+    color: var(--400, #717680);
+    background: var(--100, #F5F5F5);
+}
+.full_screen_button_container:hover {
+    background: var(--100, #eeeeee);
+}
+.full_screen_button_icon {
+    @apply w-[18px] h-[18px];
+}
+.full_screen_button_text {
+    @apply text-[14px] leading-[20px] tracking-wide font-[600];
+}

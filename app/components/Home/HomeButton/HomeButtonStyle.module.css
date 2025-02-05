@@ -1,0 +1,16 @@
+.home_button_container {
+    @apply w-full lg:h-[calc(100vh-210px)] md:h-[calc(100vh-150px)] h-[calc(100vh-105px)] bg-[#FFFFFF] flex items-center justify-center rounded-[18px];
+    box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
+}
+
+.home_button_warpper {
+    @apply lg:w-[331px] md:w-[70%] w-[90%] h-[80px] border-[1px] flex items-center justify-center;
+    background-color: var(--50, #FAFAFA);
+    box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
+}
+.home_button_body {
+    @apply bg-[#2166F0] rounded-[8px] px-[67px] py-[10px] transition-all duration-75 ease-in-out hover:bg-[#5589f1];
+}
+.home_button_text {
+    @apply text-[16px] leading-[24px] font-[600] tracking-wide text-white; 
+}

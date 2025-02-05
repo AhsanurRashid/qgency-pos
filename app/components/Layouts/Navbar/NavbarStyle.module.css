@@ -1,0 +1,6 @@
+.navbar_container{
+    @apply bg-white px-[20px] py-[11px] flex items-center gap-[56px];
+}
+.navbar_wrapper {
+    @apply flex items-center justify-between w-full;
+}

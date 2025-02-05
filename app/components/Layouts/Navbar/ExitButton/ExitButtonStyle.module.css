@@ -1,0 +1,13 @@
+.exit_button_warpper {
+    @apply flex items-center gap-[8px];
+}
+.exit_button_icon_warpper {
+    @apply border-[1px] border-[#E9EAEB] rounded-[6px] bg-white w-[36px] h-[36px] flex items-center justify-center;
+}
+.exit_button_icon {
+    @apply rotate-180 w-[20px] h-[20px] text-red-500 font-light;
+}
+.exit_button_text {
+    @apply text-[14px] leading-[20px] font-[500] tracking-wide;
+    color: var(--500, #717680);
+}
