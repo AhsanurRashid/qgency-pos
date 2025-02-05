@@ -1,0 +1,15 @@
+.product_page_container {
+    @apply p-[20px];
+}
+.product_page_warpper {
+    @apply grid grid-cols-12 gap-[30];
+}
+.product_page_left {
+    @apply bg-white col-span-9 min-h-[calc(100vh-102px)] rounded-[18px] overflow-hidden;
+    box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
+
+}
+.product_page_right {
+    @apply bg-white col-span-3 min-h-[calc(100vh-102px)] rounded-[18px] overflow-hidden;
+    box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
+}
