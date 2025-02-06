@@ -1,0 +1,58 @@
+.invoice_container {
+    @apply fixed inset-0 bg-[#00000070] h-screen flex items-center justify-center;
+}
+.invoice_wrapper {
+    @apply 2xl:w-[586px] lg:w-[50%] md:w-[70%] w-[85%]  border-[1px] border-[#E9EAEB] rounded-[12px] bg-[#FFFFFF] p-[20px];
+    box-shadow: 0px 20px 20px 0px #0000001A;
+}
+.invoice_header {
+    @apply flex items-center justify-between mb-[25px];
+}
+.invoice_btns {
+    @apply flex items-center gap-2;
+}
+.invoice_icon_text {
+    @apply flex items-center gap-1 rounded-[8px] text-white px-[16px] py-[10px];
+}
+.invoice_text {
+    @apply text-[16px] leading-[20px] font-[600] tracking-wide;
+}
+.invoice_icon {
+    @apply w-[18px] h-[18px];
+}
+.invoice_address {
+    @apply flex items-center gap-[8px];
+}
+.invoice_address_icon_wrapper {
+    @apply flex items-center justify-center bg-[#F5F5F5] rounded-[4px] w-[28px] h-[28px];
+}
+.invoice_address_icon {
+    @apply w-[12px] h-[12px];
+}
+.invoice_address_text {
+    @apply text-[14px] leading-[20px] font-[400] tracking-wide text-[#535862];
+}
+.invoice_items {
+    @apply border-b border-dotted;
+}
+.invoice_items_header {
+    @apply grid grid-cols-3 border-y border-dotted py-2;
+}
+.invoice_items_body {
+    @apply grid grid-cols-3 py-3;
+}
+.invoice_item {
+    @apply text-[14px] leading-[20px] font-[400] text-[#252B37];
+}
+.invoice_amount {
+    @apply space-y-3 py-3 border-b border-dotted;
+}
+.invoice_amount_wrapper {
+    @apply flex items-center justify-between text-[16px] leading-[24px] font-[500] text-[#535862];
+}
+.invoice_amount_grand {
+    @apply space-y-3 py-3;
+}
+.close_btn {
+    @apply w-[20px] h-[20px] cursor-pointer;
+}

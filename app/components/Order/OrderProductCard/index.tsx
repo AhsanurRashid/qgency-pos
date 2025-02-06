@@ -11,9 +11,9 @@ const OrderProductCard = ({orderProduct}: {orderProduct: OrderProductType}) => {
     <div className={OrderProductCardStyle.order_product_card_wrapper}>
         <Image
             src={orderProduct.image}
-            width={1000}
-            height={1000}
-            alt='order_product_img'
+            width={64}
+            height={64}
+            alt="order_product_img"
             className={OrderProductCardStyle.order_product_img}
         />
         <div className={OrderProductCardStyle.order_product_content}>

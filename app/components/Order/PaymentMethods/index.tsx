@@ -5,8 +5,11 @@ import PaymentMethodsStyle from './PaymentMethods.module.css'
 import { Banknote, CreditCard, HandCoins } from 'lucide-react'
 import { useState } from 'react'
 import { cn } from '@/utils/cn'
+import { usePaymentMethodStore } from './_store'
 
 const PaymentMethods = () => {
+    const {setPaymentMethodId} = usePaymentMethodStore((state) => state)
+
     const [selectedPaymentId, setSelectedPaymentId] = useState<number | null>(null)
 
     const payments: PaymentMethodsType[] = [
@@ -26,6 +29,7 @@ const PaymentMethods = () => {
 
     const handleClickPayment = (id: number) => {
         setSelectedPaymentId(id)
+        setPaymentMethodId(id)
     }
   return (
     <div className={PaymentMethodsStyle.payment_method}>
