@@ -1,7 +1,7 @@
 import ProductSearh from '@/app/components/Products/ProductSearch'
 import ProductPageStyle from './ProductPageStyle.module.css'
-import ProductCard from '@/app/components/Products/ProductCard'
 import OrderSummery from '@/app/components/Order/OrderSummery'
+import ProductLsit from '@/app/components/Products/ProductList'
 
 const Paducts = () => {
   return (
@@ -11,17 +11,7 @@ const Paducts = () => {
           <div className={ProductPageStyle.product_search_wrapper}>
             <ProductSearh />
           </div>
-          <div className={ProductPageStyle.product_list}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
+          <ProductLsit />
         </div>
         <div className={ProductPageStyle.product_page_right}>
           <OrderSummery />

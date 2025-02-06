@@ -9,27 +9,10 @@
     box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
 }
 .product_page_right {
-    @apply bg-white lg:w-[25%] md:w-[35%] w-full min-h-[calc(100vh-102px)] rounded-[18px] overflow-hidden;
+    @apply bg-white lg:w-[25%] md:w-[35%] w-full rounded-[18px] overflow-hidden;
     box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
 }
 .product_search_wrapper {
     @apply p-[18px] bg-[#FAFAFA] border-b border-[#E9EAEB];
 }
-.product_list {
-    @apply grid 2xl:grid-cols-7 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px] p-[20px] max-h-[calc(100vh-102px)] overflow-y-auto;
-}
 
-/* scrolling bar design */
-.product_list::-webkit-scrollbar {
-    width: 7px; 
-}
-
-.product_list::-webkit-scrollbar-track {
-    background: transparent; 
-    border-radius: 35px;
-}
-
-.product_list::-webkit-scrollbar-thumb {
-    background: #E9EAEB;
-    border-radius: 10px;
-}

@@ -1,15 +1,24 @@
+.payment_method {
+    @apply p-[16px] border-b-[1px] border-[#E9EAEB];
+}
+.payment_method_title {
+    @apply text-[14px] leading-[24px] font-[500] text-[#181D27] mb-[10px];
+}
+.payment_method_container {
+    @apply grid 2xl:grid-cols-3 xl:grid-cols-2 grid-cols-1 2xl:gap-4 gap-2;
+}
 .payment_method_wrapper {
     @apply flex items-center justify-between;
 }
 .payment_method_card {
-    @apply w-[151px] h-[44px] flex items-center justify-center gap-[8px] bg-white border-[1px] border-[#E9EAEB] rounded-[8px];
+    @apply w-full h-[44px] flex items-center justify-center gap-[8px] bg-white border-[1px] rounded-[8px];
 }
 .payment_method_img {
     @apply w-[16px] h-[16px] object-cover;
 }
 .payment_method_icon {
-    @apply w-[24px] h-[20px] text-[#717680];
+    @apply w-[24px] h-[20px];
 }
 .payment_method_name {
-    @apply text-[14px] leading-[20px] font-[500] text-[#717680];
+    @apply 2xl:text-[14px] xl:text-[12px] leading-[20px] font-[500];
 }

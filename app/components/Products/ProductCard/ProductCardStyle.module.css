@@ -1,13 +1,13 @@
 
 .product_card_wrapper {
-    @apply rounded-[4px] overflow-hidden;
+    @apply rounded-[8px] overflow-hidden;
     border: 1px solid var(--200, #E9EAEB)
 }
 .product_content {
     @apply p-[10px] bg-white;
 }
 .product_card_img {
-    @apply w-full h-auto object-cover;
+    @apply w-full h-[151px] object-cover;
 }
 .product_card_name {
     @apply text-[14px] leading-[24px] tracking-wide font-[500];
@@ -40,4 +40,21 @@
 }
 .product_card_add_text {
     @apply text-[14px] leading-[20px] tracking-wide font-[500];
+}
+
+/* Skeleton loader styles */
+.skeleton_image {
+    @apply bg-gray-200 w-full h-[200px] rounded-[4px] animate-pulse;
+}
+
+.skeleton_name {
+    @apply bg-gray-200 h-[18px] w-[70%] rounded-[4px] animate-pulse mb-2;
+}
+
+.skeleton_price {
+    @apply bg-gray-200 h-[18px] w-[50%] rounded-[4px] animate-pulse mb-2;
+}
+
+.skeleton_stock {
+    @apply bg-gray-200 h-[16px] w-[40%] rounded-[4px] animate-pulse;
 }

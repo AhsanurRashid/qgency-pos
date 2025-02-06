@@ -27,3 +27,24 @@
 .order_calculation_result {
     @apply text-[#181D27] text-[16px] leading-[24px] font-[500] tracking-wide;
 }
+.total_wrapper {
+    @apply px-[16px] py-[10px];
+}
+.total_text_and_amount {
+    @apply flex items-center justify-between;
+}
+.total_text {
+    @apply text-[16px] leading-[24px] font-[500] text-[#252B37];
+}
+.total_amount {
+    @apply text-[20px] leading-[30px] font-[600] text-[#252B37];
+}
+.total_sub_text {
+    @apply text-[14px] leading-[20px] font-[400] text-[#535862];
+}
+.submit_btn_wrapper {
+    @apply px-[16px] pt-[10px] pb-[16px];
+}
+.submit_btn {
+    @apply w-full h-[60px] text-[18px] leading-[28px] font-[600] text-white bg-[#2166F0] rounded-[8px] text-center transition-all duration-75 ease-in-out hover:bg-[#3271ee];
+}

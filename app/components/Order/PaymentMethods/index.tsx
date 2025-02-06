@@ -1,9 +1,14 @@
+"use client"
 import Image from 'next/image'
 import { PaymentMethodsType } from '@/utils/types'
 import PaymentMethodsStyle from './PaymentMethods.module.css'
-import { Banknote } from 'lucide-react'
+import { Banknote, CreditCard, HandCoins } from 'lucide-react'
+import { useState } from 'react'
+import { cn } from '@/utils/cn'
 
 const PaymentMethods = () => {
+    const [selectedPaymentId, setSelectedPaymentId] = useState<number | null>(null)
+
     const payments: PaymentMethodsType[] = [
         {
             id: 1,
@@ -18,21 +23,35 @@ const PaymentMethods = () => {
             name: 'Card',
         },
     ]
+
+    const handleClickPayment = (id: number) => {
+        setSelectedPaymentId(id)
+    }
   return (
-    <div>
-        <h1>Select payment</h1>
-        <div className={PaymentMethodsStyle.payment_method_wrapper}>
-            <div className={PaymentMethodsStyle.payment_method_card}>
-                <Image 
-                    src="/assets/images/checkout_one.png"
-                    width={1000}
-                    height={1000}
-                    className={PaymentMethodsStyle.payment_method_img}
-                    alt='test'
-                />
-                <Banknote className={PaymentMethodsStyle.payment_method_icon}/>
-                <p className={PaymentMethodsStyle.payment_method_name}>Pay Later</p>
-            </div>
+    <div className={PaymentMethodsStyle.payment_method}>
+        <h1 className={PaymentMethodsStyle.payment_method_title}>Select payment</h1>
+        <div className={PaymentMethodsStyle.payment_method_container}>
+            {
+                payments.map((payment: PaymentMethodsType, index: number) => (
+                    <button onClick={() => handleClickPayment(payment.id)} key={`payment_${index}`} className={PaymentMethodsStyle.payment_method_wrapper}>
+                        <div className={cn(PaymentMethodsStyle.payment_method_card, selectedPaymentId === payment.id ? "border-[#4D85F3] text-[#4D85F3] bg-[#F2F7FF]" : "border-[#E9EAEB] text-[#717680] bg-white")}>
+                            <Image 
+                                src={`/assets/images/${selectedPaymentId === payment.id ? 'checkout_two' : 'checkout_one'}.png`}
+                                width={1000}
+                                height={1000}
+                                className={PaymentMethodsStyle.payment_method_img}
+                                alt='test'
+                            />
+                            {
+                                payment.name === 'Cash' ? <Banknote className={PaymentMethodsStyle.payment_method_icon}/>
+                                : payment.name === 'Pay Later' ? <HandCoins className={PaymentMethodsStyle.payment_method_icon}/>
+                                :  <CreditCard className={PaymentMethodsStyle.payment_method_icon}/>
+                            }
+                            <p className={PaymentMethodsStyle.payment_method_name}>Pay Later</p>
+                        </div>
+                    </button>
+                ))
+            }
         </div>
     </div>
   )
