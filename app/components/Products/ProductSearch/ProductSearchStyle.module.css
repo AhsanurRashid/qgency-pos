@@ -1,0 +1,13 @@
+.product_search_form {
+    @apply flex items-center gap-2 p-[12px] bg-white border-[1px] border-[#E9EAEB] rounded-[8px];
+    box-shadow: 0px 1px 2px 0px #2D36430A, 0px 2px 4px 0px #2D364314;
+}
+.product_search_icon {
+    @apply w-[16px] h-[16px];
+}
+.product_search_input {
+    @apply placeholder:text-[#9CA3AE] outline-none w-full text-[16px] font-[400] leading-[24px] tracking-wide;
+}
+.focused {
+    @apply border-gray-400;
+}

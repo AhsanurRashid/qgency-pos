@@ -1,0 +1,43 @@
+
+.product_card_wrapper {
+    @apply rounded-[4px] overflow-hidden;
+    border: 1px solid var(--200, #E9EAEB)
+}
+.product_content {
+    @apply p-[10px] bg-white;
+}
+.product_card_img {
+    @apply w-full h-auto object-cover;
+}
+.product_card_name {
+    @apply text-[14px] leading-[24px] tracking-wide font-[500];
+    color: var(--text-content-primary-800, #181D27);
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limits text to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product_card_price {
+    @apply text-[14px] leading-[24px] tracking-wide font-[500];
+    color: var(--700, #C90C0C);
+}
+.product_card_stcok_and_add {
+    @apply flex items-center justify-between;
+}
+.product_card_stock {
+    @apply text-[14px] leading-[20px] tracking-wide font-[400];
+    color: var(--400, #717680);
+
+}
+.product_card_add {
+    @apply flex items-center gap-[6px] px-[10px] py-[6px] transition-all duration-75 ease-in-out hover:text-white hover:bg-[#2166F0] rounded-[6px];
+    background: var(--100, #F5F5F5);
+    color: var(--800, #252B37);
+}
+.product_card_add_icon {
+    @apply w-[18px] h-[18px];
+}
+.product_card_add_text {
+    @apply text-[14px] leading-[20px] tracking-wide font-[500];
+}

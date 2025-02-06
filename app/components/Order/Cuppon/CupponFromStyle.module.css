@@ -1,0 +1,19 @@
+.cuppon_from_warpper {
+    @apply px-[17px] pt-[18px] pb-[25px];
+}
+.cuppon_from {
+    @apply flex items-center justify-between border-[1px] border-[#E9EAEB] rounded-[8px];
+}
+.cuppon_icons {
+    @apply flex items-center justify-center w-[58px] h-[36px];
+}
+.cuppon_icon{
+    @apply w-[16px] h-[16px];
+    color: var(--500, #717680);
+}
+.cuppon_input {
+    @apply w-full h-[36px] px-[14px] py-[6px] outline-none border-x-[1px] border-[#E9EAEB] text-[14px] leading-[24px] tracking-wide font-[400] text-[#717680];
+}
+.cuppon_btn {
+    @apply w-[90px] h-[40.38px] rounded-[8px] text-[14px] leading-[20px] tracking-wide font-[600] text-white bg-[#141414];
+}

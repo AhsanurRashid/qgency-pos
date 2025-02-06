@@ -1,0 +1,29 @@
+.order_summery_warpper {
+
+}
+.order_summery_title {
+    @apply flex items-center justify-between px-[16px] py-[12px];
+}
+.order_summery_title_text {
+    @apply text-[16px] leading-[24px] tracking-wide font-[600];
+    color: var(--Gray-800, #181D27);
+}
+.order_summery_clear {
+    @apply text-[14px] leading-[20px] tracking-wide font-[500] underline cursor-pointer;
+    color: var(--400, #717680);
+}
+.order_product_list {
+    @apply border-y-[1px] border-[#E9EAEB];
+}
+.order_calculation {
+    @apply p-[16px] border-b-[1px] border-[#E9EAEB];
+}
+.order_calculation_wrapper {
+    @apply space-y-[10px] flex items-center justify-between;
+}
+.order_calculation_title {
+    @apply text-[16px] leading-[24px] font-[400] tracking-wide text-[#535862];
+}
+.order_calculation_result {
+    @apply text-[#181D27] text-[16px] leading-[24px] font-[500] tracking-wide;
+}
